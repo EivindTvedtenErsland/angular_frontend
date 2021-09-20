@@ -1,0 +1,15 @@
+<div *ngIf="item">
+    
+    <h2>{{item.name | uppercase}} Details</h2>
+    <div><h4><span> id: </span>{{item.id}} </h4></div>
+    <div>
+        <label for="item-name">Item name: </label>
+        <input id="item-name" [(ngModel)]="item.name" placeholder="fish">
+        <label for="item-price">Item Price: </label>
+        <input id="item-price" [(ngModel)]="item.price" placeholder=0>
+    
+    </div>
+    <app-details-button color="black" backgroundColor="red" text="Delete item" (clickEvent)="deleteItem(item)"></app-details-button>
+    <app-details-button color="white" backgroundColor="black" text="Go back" (clickEvent)="goBack()"></app-details-button>
+</div>
+

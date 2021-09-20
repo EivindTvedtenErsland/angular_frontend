@@ -1,0 +1,36 @@
+h1 
+{
+    padding-left: 5%;
+    background-color: aqua;
+    color: yellow;
+    text-decoration-color: blue;
+}
+
+h2, h3 
+{
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body 
+{
+    margin: 2em;
+}
+
+body, input[type="text"], button 
+{
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+p 
+{
+    background-color: black;
+    color: aliceblue;
+}
+[class=router-outlet]
+{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,12 @@
+<ul class="items">
+  <app-add-item></app-add-item>
+  <h2>My Items</h2>
+  <li *ngFor="let item of items">
+    <a routerLink="/items/detail/{{item.id}}">
+      <span class="badge">ID: {{ item.id | slice:0:5 }} ..</span> 
+      <div class="name">Name: {{ item.name }} </div> 
+      <div class="desc"> Desc: {{ item.description }} </div>
+      <div class="price"> Price: {{ item.price }} </div> 
+    </a>
+  </li>
+</ul>

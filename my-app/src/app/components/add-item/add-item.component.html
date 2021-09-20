@@ -1,0 +1,15 @@
+<form [formGroup]="addItemForm" (ngSubmit)="onSubmit()">
+     <ul>
+     <h2>Add an Item</h2>
+     <label for="name">Item name: </label>
+     <li><input id="name" type="text" formControlName="name" placeholder="name" required></li>
+
+     <label for="description">Description: </label>
+      <li><input id="description" type="text" formControlName="description" placeholder="Add a description (Optional)"></li>
+
+     <label for="price">Price: </label>
+      <li><input id="price" type="number" formControlName="price" min=1 max=100 placeholder="price between 1 and 100" required></li>
+     </ul>
+     <button type="submit" [disabled]="!addItemForm.valid">Submit</button>
+    <!-- <app-details-button form="addItemForm" type="Submit" icon="faSave" color="black" backgroundColor="green" text="Add item" ></app-details-button> -->
+</form>

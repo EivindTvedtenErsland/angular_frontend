@@ -1,0 +1,7 @@
+<button [ngStyle]="{ 'background-color': backgroundColor, 'color': color }" 
+     class="btn" 
+     id="app-details-button"
+     (click)="onClick()">{{ text }}
+     <fa-icon [icon]="faArrowDown" [ngStyle]="{ 'background-color' : iconBackground,
+                                             'color': iconColor }" ></fa-icon>
+</button>
